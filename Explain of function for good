@@ -1,0 +1,53 @@
+Good example (BankAccount) — functions & definitions
+
+1. __init__(self, owner: str, starting_balance: float = 0.0)
+
+Purpose: construct a new account and set initial state.
+
+Parameters: owner (owner name), starting_balance (initial money, default 0).
+
+Returns: none (constructor).
+
+Notes: initializes _balance and enforces that the class controls its state.
+
+
+
+2. deposit(self, amount: float) -> None
+
+Purpose: add money to the account.
+
+Parameters: amount (must be positive).
+
+Returns: nothing.
+
+Notes: validates the amount; maintains invariants (no negative deposits).
+
+
+
+3. withdraw(self, amount: float) -> None
+
+Purpose: subtract money from the account if sufficient funds exist.
+
+Parameters: amount (must be positive and ≤ balance).
+
+Returns: nothing.
+
+Notes: raises errors for invalid operations so callers must handle them.
+
+
+
+4. get_balance(self) -> float
+
+Purpose: read current balance.
+
+Parameters: none.
+
+Returns: current balance as float.
+
+Notes: read-only accessor — doesn’t allow external code to set _balance directly.
+
+
+
+
+
+---
