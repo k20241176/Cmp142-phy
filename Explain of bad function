@@ -1,0 +1,23 @@
+Bad example (AccountData + functions) — functions & definitions
+
+1. AccountData.__init__(self, owner, balance)
+
+Purpose: store raw data fields. No validation.
+
+Problem: other code must know to validate balance before using it.
+
+
+
+2. deposit(account: AccountData, amount)
+
+Purpose: mutate account.balance.
+
+Problem: scattered logic — anyone can call deposit without constraints, and there’s no guarantee that all code paths enforce validation.
+
+
+
+3. withdraw(account: AccountData, amount)
+
+Purpose: mutate account.balance.
+
+Problem: no checks (like preventing negative balance) — invariants aren’t enforced by the class, so bugs can easily slip in.
