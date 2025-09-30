@@ -1,0 +1,26 @@
+Ugly example (GodAccount) — functions & definitions
+
+1. deposit_and_print(self)
+
+Purpose: reads user input, updates a global balance, prints result.
+
+Problems: direct I/O inside the method (hard to unit test); using global variable GLOBAL_BALANCE (makes behavior depend on external state); no validation; side effects and poor separation of concerns.
+
+
+
+2. withdraw_and_print(self)
+
+Same problems as above, but for withdrawal.
+
+
+
+
+
+---
+
+Quick checklist you can submit (short answers)
+
+Q1: Create a GitHub account.
+
+Answer (short): I created a GitHub account at github.com (followed signup, email verification, created a repository assignments, configured local git and SSH). (If you need, tell me what username and I can give exact commands to push.)
+
